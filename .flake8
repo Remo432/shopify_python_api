@@ -1,0 +1,8 @@
+[flake8]
+max-line-length = 120
+import-order-style = google
+ignore = E501,  # line too long
+    F401,  # unused imports
+    F821,  # undefined name
+    F403,  # unable to detect undefined names
+    F841,  # local variable assigned but never used

@@ -38,7 +38,7 @@ class OrderRiskTest(TestCase):
         v = shopify.OrderRisk.find(284138680, order_id=450789469)
         v.destroy()
 
-    def test_delete_order_risk(self):
+    def test_put_order_risk(self):
         self.fake("orders/450789469/risks/284138680", method='GET', body=self.load_fixture('order_risk'))
         self.fake(
             "orders/450789469/risks/284138680",

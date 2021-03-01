@@ -1,6 +1,5 @@
 import time
 import hmac
-import json
 from hashlib import sha256
 
 try:
